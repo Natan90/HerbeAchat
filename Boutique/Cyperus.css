@@ -1,0 +1,24 @@
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+.conteneur1 {
+    flex: 1;
+    max-width: 500px;
+    margin-right: 20px; 
+}
+
+.conteneur2 {
+    flex: 1;
+    max-width: 500px;
+}
+
+.Cyperus img {
+    width: 100%;
+    height: auto;
+}
