@@ -1,0 +1,42 @@
+header{
+    margin: 20px
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+.conteneur1 {
+    width: 500px;
+    margin-right: 20px; 
+}
+.conteneur2 {
+    max-width: 500px;
+}
+.Cyperus img {
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
+}
+.conteneur2 a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid rgb(5, 88, 9);
+    padding: 5px 40px;
+
+}
+.conteneur2 a:active{
+    color:rgb(5, 88, 9);;
+}
+.ajouterPanier a:hover{
+    border: 3px solid rgb(5, 88, 9);
+}
+#fleche{
+    height: 60px;
+    width: 50px; 
+}   
+
