@@ -4,32 +4,115 @@ html *{
 }
 body{
     margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('herbes-chats.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 /* BARRE DE NAVIGATION */
 
-nav{
-    /* text-align: center; */
-    background-color:blanchedalmond;
-    padding: 10px;
+header {
+    background-color: transparent;
+    padding: 10px 20px;
+    z-index: 10;
+}
 
+.navBarre {
+    position: relative;
+    background-color: transparent;
+    padding: 10px 0;
+    height: 50px;
+    z-index: 10;
+}
+
+.navGauche, .navDroite {
+    position: absolute;
+    top: 0;
     display: flex;
-
+    align-items: center;
+    height: 100%;
 }
-nav a{
+
+.navGauche {
+    margin: auto;
+}
+.navDroite a{
+    text-align: center;
+}
+
+.navDroite {
+    right: 0;
+    padding-right: 20px;
+}
+
+.navBarre a {
+    color: #ffffff;
     text-decoration: none;
-    color: brown;
     margin-right: 30px;
+    padding: 5px 10px;
+}
 
+.navBarre a:hover {
+    text-decoration: underline;
 }
-.navGauche{
-    margin-left: auto;
+
+/* BARRE DE RECHERCHE */
+
+.barreRecherche {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.navDroite{
-    margin-right: auto;
+
+.barreRecherche input {
+    width: 100px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
 }
+
+.barreRecherche button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.barreRecherche button:hover {
+    background-color: #555;
+}
+
+
+
 
 /* CORPS DE PAGE */
+
+.titreAccueil{
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+
+
+}
+
+.background-img{
+    position: absolute;
+    width: 100%;
+}
 
 /* FOOTER DE PAGE */
 
