@@ -6,7 +6,7 @@ body{
     margin: 0;
     padding: 0;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('herbes-chats.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/images/herbes-chats.webp');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -39,8 +39,15 @@ header {
 }
 
 .navGauche {
-    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px; 
 }
+
 .navDroite a{
     text-align: center;
 }
@@ -57,16 +64,33 @@ header {
     margin-right: 30px;
     padding: 5px 10px;
     font-size: 20px;
+    position: relative;
+}
+
+.navBarre a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
 
 .navBarre a:hover {
-    text-decoration: underline;
+    transition: transform 0.3s ease;
+}
+
+.navBarre a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 /* BARRE DE RECHERCHE */
 
 .barreRecherche {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,9 +108,9 @@ header {
     padding: 5px 10px;
     margin-left: 5px;
     border: none;
-    background-color: transparent;
-    color: #fff;
-    border-radius: 50%;
+    background-color: black;
+    color: #010101;
+    border-radius: 40%;
     cursor: pointer;
 }
 

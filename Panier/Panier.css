@@ -1,0 +1,114 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* BARRE DE NAVIGATION */
+
+header {
+    background-color:  rgb(37, 37, 37);
+    padding: 10px 20px;
+    z-index: 10;
+}
+
+.navBarre {
+    position: relative;
+    background-color: rgb(37, 37, 37);
+    padding: 10px 0;
+    height: 50px;
+    z-index: 10;
+}
+
+.navGauche, .navDroite {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navGauche {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px; 
+}
+
+.navDroite a{
+    text-align: center;
+}
+
+.navDroite {
+    right: 0;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.navBarre a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 30px;
+    padding: 5px 10px;
+    font-size: 20px;
+    position: relative;
+}
+
+.navBarre a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navBarre a:hover {
+    transition: transform 0.3s ease;
+}
+
+.navBarre a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* BARRE DE RECHERCHE */
+
+.barreRecherche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barreRecherche input {
+    width: 200px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+.barreRecherche button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    background-color: black;
+    color: #010101;
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+.barreRecherche button:hover {
+    background-color: #555;
+}
