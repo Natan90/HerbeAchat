@@ -135,7 +135,22 @@ body{
 /* FOOTER DE PAGE */
 
 footer{
-    margin-bottom: -10px;
+    text-align: left;
+    background-color: rgb(5, 88, 9);
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: all 0.3s ease;
+    margin-left: 20px;
+}
+footer .lien :hover{
+    transform: translate(10px,0);
+    color: white;
+}
+footer p{
+    text-align: center;
 }
 
 

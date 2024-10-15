@@ -5,6 +5,6 @@
 ## Membres du groupe :
 
 Page d'accueil : BOUCHE Natan<br>
-Page boutique : BIGEARD Noa<br>
+Page boutique : BIGEARD Noa<br> 
 Page panier : AIGUBELLE Arthur<br>
 Page à propos : LEVARD Emmanuel<br>
