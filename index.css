@@ -31,6 +31,8 @@ body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/herbes-chats.webp');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -173,7 +175,7 @@ header {
 /* WIKI HERBE A CHAT */
 .wikiHerbeAchat{
     z-index: -10;
-    width: 40%;
+    width: 50%;
     text-align: center;
     background-color: white;
     padding: 30px;
@@ -185,6 +187,37 @@ header {
 .wikiHerbeAchat p{
     text-align: justify;
 }
+
+.carte-faq{
+    width: 70%;
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 50px auto auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.reponse{
+    display: none;
+    text-align: justify;
+
+
+}
+
+.question{
+    cursor: pointer;
+    text-align: left;
+    color: #134505;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+.fleche-simple{
+    float: right;
+    width: 30px;
+}
+
 
 /* FOOTER DE PAGE */
 
