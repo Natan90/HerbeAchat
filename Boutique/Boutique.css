@@ -111,12 +111,40 @@ html::-webkit-scrollbar{
     display: none;
 }
 /*Filtre*/
-.sous{
-    display: none;
+.filtre{
+    margin-top: 20px;
+    text-align: start;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    margin-left: 10px;
 }
-.sous:hover{
-    display: block;
+
+.filtre a{
+    border: solid black 1px;
+    text-decoration: none;
+    color: black;
+    padding: 6px;
+    margin-right: 10px; 
 }
+.filtre a:hover{
+    border: solid black 3px;
+}
+
+.filtre p{
+    margin: 0 10px 0 0; 
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.filtre select {
+    padding: 6px;
+    border: solid black 1px;
+}
+.filtre .option .rien{
+    color: yellow;    
+}
+
 /* CORPS DE PAGE */
 body{
     margin: 0;
