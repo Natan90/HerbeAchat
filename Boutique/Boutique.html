@@ -40,6 +40,13 @@
                     <option value="spray">En spray</option>
                     <option value="pourdre">En poudre</option>
                 </select>
+                <p>Effet rechercher :</p>
+                <select name="deroulant3" id="deroulantEffet">
+                    <option value="rien">Type d'effet</option>
+                    <option value="Euphorisant">Euphorisant</option>
+                    <option value="calmant">Calmant</option>
+                    <option value="digestion">Aide à la digestion</option>
+                </select>
         </div>
          <div class="imageHerbe">
             <div class="imgCyperus">
@@ -78,8 +85,28 @@
                 <a href="../Boutique/Matatabi.html"><img src="../images/Matatabi.webp" alt="Herbe7"></a><br>
                 <span>Matatabi en pot 4.99 €</span>
             </div>
-          
-                
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                  const elements = document.querySelectorAll('.imgCyperus, .imgPhalangere, .poudre, .imgBambou, .imgBle, .spray, .imgCataire, .imgGermandree, .imgMatatabi');
+                  
+                  const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                      if (entry.isIntersecting) {
+                        entry.target.classList.add('visible'); 
+                        observer.unobserve(entry.target); 
+                      }
+                    });
+                  }, {
+                    threshold: 0.7 
+                  });
+              
+                  elements.forEach(element => {
+                    element.classList.add('hidden'); 
+                    observer.observe(element); 
+                  });
+                });
+              </script>
+              
          </div>
     </div>
     <footer><br>
