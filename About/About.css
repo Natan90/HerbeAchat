@@ -13,6 +13,7 @@ body{
 }
 #formulaire_span{
     justify-content: center;
+    flex-direction: column;
     display: flex;
 }
 /* BARRE DE NAVIGATION */
