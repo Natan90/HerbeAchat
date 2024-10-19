@@ -5,12 +5,51 @@ html *{
 body{
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
+#Titre_bienvenue{
+    color: green;
+    text-align: center;
+}
+#formulaire_span{
+    background-color: rgb(127, 255, 150);
+    margin: auto;
+    flex-wrap:wrap;
+    justify-content: center;
+    flex-direction:column;
+    display: flex;
+    border-style: solid;
+    height: fit-content;
+    width: fit-content;
+    border-width: 5px;
+    border-radius: 5px;
+    text-align: center;
 
+}
+.field{
+    width: calc(50%);
+    text-align: center;
+    border-width: 2px;
+    border-style: outset;
+}
 
+.image{
+    display: flex;
+}
+
+#Content{
+    width: calc(50%);
+    height:50px;
+    text-align: center;
+    border-width: 2px;
+    border-style: outset;
+}
+#footer{
+    margin-top:calc(100%);
+}
 /* BARRE DE NAVIGATION */
-
 header {
     background-color:  rgb(37, 37, 37);
     padding: 10px 20px;
