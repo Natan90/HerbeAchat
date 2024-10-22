@@ -38,6 +38,7 @@ body{
 
 .image{
     display: flex;
+    z-index: -1;
 }
 
 #Content{
@@ -57,7 +58,33 @@ header {
     padding: 10px 20px;
     z-index: 10;
 }
-
+#bckg{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('../images/Cat-background.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+}
+#divdiv{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.text_on_image{
+    color: white;
+    text-align: center;
+}
+.cardbox{
+    background-color: rgba(255,255,255,0.30);
+    border-style: groove;
+    border-width: 3px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    width: fit-content;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
 .navBarre {
     position: relative;
     background-color: rgb(37, 37, 37);
