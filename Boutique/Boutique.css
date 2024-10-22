@@ -3,8 +3,6 @@ header {
     background-color:  rgb(37, 37, 37);
     padding: 10px 20px;
     z-index: 10;
-    position: sticky;
-    top: 0;
 }
 
 .navBarre {
@@ -120,58 +118,61 @@ html::-webkit-scrollbar{
 /*Filtre*/
 .filtre{
     text-align: start;
-    display: flex;
+    display: block;
     align-items: center; 
     justify-content: flex-start; 
     margin-left: 10px;
+    position: fixed;
+    margin-top: 50px;
+    border: solid black 2px;
+    padding: 15px;
 
 }
 
 .filtre a{
-    border: solid black 1px;
+    border: solid white 1px;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 6px;
-    margin-right: 10px; 
     border-radius: 20px;
-    margin-top: 15px;
+
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 .filtre a:hover{
-    border: solid black 3px;
+    border: solid white 3px;
 }
 
-.filtre p{
-    margin-right: 10px;
-    margin-left: 30px;
-    color: black;
+.conteneur1 .filtre p{
+    margin-right: 20px;
+    margin-left: 25px;
+    color: white;
     margin-top: 15px;
-}
-
-.filtre select {
-    padding: 6px;
-    border: solid black 1px;
+    align-items: center;
 }
 
 .filtre select {
     padding: 6px;
     border: solid black 1px;
     border-radius: 20px;
-    margin-top: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 
 
 /* CORPS DE PAGE */
-/*
+/* 
 changer les photos 
 changer fond
 rajouter objets
 rendre responsive
 Faire section de meilleur vente / promo
+mettre filtre sur le coté
 
 
+ */
 
-*/
 
 body{
     margin: 0;
@@ -212,7 +213,7 @@ body{
 }
 
 .imageHerbe > div:hover {
-    transform: scale(1.3);
+    transform: scale(1.05);
     z-index: 1;
 }
 .imageHerbe div span{
@@ -228,10 +229,13 @@ body{
     margin-bottom: 20px;
     background-color: white;
     border-radius: 25px;
+    box-shadow: 10px 5px 5px rgb(60, 206, 6);
+
 }
 
-
-
+.container-total{
+    display: flex;
+}
 /* FOOTER DE PAGE */
 
 footer{
