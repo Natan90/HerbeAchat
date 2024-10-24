@@ -145,6 +145,49 @@ header {
 }
 
 
+/* BARRE DE NAV RESPONSIVE */
+@media (max-width: 768px) {
+    .navBarre {
+        flex-direction: column ;
+        align-items: flex-start;
+    }
+    
+    .navGauche, .navDroite {
+        display: none; /* Hide menu items by default on small screens */
+        flex-direction: column;
+        width: 10%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 9;
+    }
+    .navDroite{
+        margin-top: 200px;
+    }
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .navBarre.active .navGauche,
+    .navBarre.active .navDroite {
+        display: flex;
+    }
+
+    .barreRecherche {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
 
 
 /* CORPS DE PAGE */

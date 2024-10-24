@@ -12,6 +12,7 @@
     <div class="imgBackground">
     <header>
         <nav class="navBarre">
+            <span class="menu-toggle">☰</span>
             <div class="navGauche">
                 <a href="index.html">Accueil</a>
                 <a href="./Boutique/Boutique.html">Boutique</a>
@@ -127,6 +128,14 @@
                     }
                 });
             });
+        });
+    </script>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navBarre = document.querySelector('.navBarre');
+    
+        menuToggle.addEventListener('click', () => {
+            navBarre.classList.toggle('active');
         });
     </script>
     
