@@ -59,9 +59,7 @@ body{
     border-radius: 5px;
     width: auto;
 }
-#footer{
-    margin-top:calc(100%);
-}
+
 /* BARRE DE NAVIGATION */
 header {
     background-color:  rgb(37, 37, 37);
