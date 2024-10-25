@@ -305,7 +305,7 @@ body{
 footer{
   background-color: rgb(5, 88, 9);
   padding: 70px 0;
-    width: 100vw; 
+    width:100vw; 
         margin-left: calc(50% - 50vw); 
         }
         .footer p{
@@ -441,7 +441,7 @@ footer{
     }
     
     .conteneur1 {
-        order: -1; /* Affiche le filtre en haut */
+        order: -1; 
     }
 }
 
