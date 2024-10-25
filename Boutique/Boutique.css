@@ -158,34 +158,29 @@ html::-webkit-scrollbar{
 
 /* CORPS DE PAGE */
 
-/* rajouter objets
+/*
 rendre responsive bientot fait 
 (Faire section de meilleur vente / promo)
 */
+ .imageHerbe > div {
+    position: relative;
+    display: inline-block;
+ }
 
-.imgCyperus, .imgPhalangere, .poudre, .imgBambou, .imgBle, .spray, .imgCataire, .imgAvocat, .imgGermandree, .imgMatatabi {
-    position: relative;
-    display: inline-block;
-}
-.imageHerbe{
-    position: relative;
-    display: inline-block;
-}
 
 .description {
     opacity: 0;
     position: absolute;
     top: 50%; 
-    left: 105%; 
-    transform: translateY(-50%);
+    align-items: center;
     padding: 8px;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     white-space: nowrap;
     z-index: 10;
     animation: fadeIn 0.3s ease-in forwards;
-    animation-delay: 0.5s; 
+    animation-delay: 1s; 
     pointer-events: none;
 }
 
@@ -208,7 +203,7 @@ rendre responsive bientot fait
 .imgAvocat:hover .description,
 .imgGermandree:hover .description,
 .imgMatatabi:hover .description {
-    animation: fadeIn 0.3s ease-in forwards 0.5s;
+    animation: fadeIn 0.3s ease-in forwards 1.0s;
 } 
 
  
@@ -262,6 +257,7 @@ body{
 }
 
 
+
 .imageHerbe div{
     text-align: center;    
 }
@@ -303,18 +299,21 @@ body{
 .container-total{
     display: flex;
 }
+
 /* FOOTER DE PAGE */
 
 footer{
   background-color: rgb(5, 88, 9);
   padding: 70px 0;
-        width: 100vw; 
+    width: 100vw; 
         margin-left: calc(50% - 50vw); 
         }
-        
+        .footer p{
+            text-align: center;
+        }
         .footer-col {
         width: 25%;
-        padding: 0 15px;
+        padding: 15px;
         display: inline-block; 
         vertical-align: top; 
         }
@@ -326,6 +325,9 @@ footer{
         margin-bottom: 35px;
         font-weight: 500;
         position: relative;
+        }
+        .footer-col ul{
+            padding-left: 35px;
         }
         .footer-col h4::before {
         content: '';
@@ -358,22 +360,7 @@ footer{
         padding-left: 8px;
         }
         
-        .footer-col .social-links a {
-        display: inline-block;
-        height: 40px;
-        width: 40px;
-        background-color: rgba(57, 33, 33, 0.2);
-        margin: 0 10px 10px 0;
-        text-align: center;
-        line-height: 40px;
-        border-radius: 50%;
-        color: #ffffff;
-        transition: all 0.5s ease;
-        }
-        .footer-col .social-links a:hover {
-        color: #24262b;
-        background-color: #ffffff;
-        }
+        
         
         /* Section Copyright */
         .copyright {
