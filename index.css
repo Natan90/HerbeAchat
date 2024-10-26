@@ -257,7 +257,7 @@ body{
 }
 
 .carte-faq{
-    width: 70%;
+    width: 80%;
     text-align: center;
     background-color: white;
     padding: 30px;
@@ -285,6 +285,24 @@ body{
 
     width: 30px;
 }
+.autre-question{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+.contact{
+    padding: 10px;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
 @media (max-width: 768px) {
     .wikiHerbeAchat{
         width: 80%;
@@ -302,14 +320,94 @@ body{
 
 /* FOOTER DE PAGE */
 
-
-footer {
-    margin-top: 30px;
-
-    background-color: #333;
-    color: white;
-    text-align: center; 
-    padding: 10px; 
-    width: 100%;
-}
+footer{
+    margin-top: 50px;
+    background-color: rgb(37, 37, 37);
+    padding: 70px 0;
+      width:100vw; 
+          margin-left: calc(50% - 50vw); 
+          color :white
+          }
+          .footer p{
+              text-align: center;
+          }
+          .footer-col {
+          width: 25%;
+          padding: 15px;
+          display: inline-block; 
+          vertical-align: top; 
+          }
+          
+          .footer-col h4 {
+          font-size: 18px;
+          color: white;
+          text-transform: capitalize;
+          margin-bottom: 35px;
+          font-weight: 500;
+          position: relative;
+          }
+          .footer-col ul{
+              padding-left: 35px;
+          }
+          .footer-col h4::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -10px;
+          background-color: white;
+          height: 2px;
+          box-sizing: border-box;
+          width: 200px;
+          }
+          
+          .footer-col ul li:not(:last-child) {
+          margin-bottom: 10px;
+          }
+          
+          
+          .footer-col ul li a {
+          font-size: 16px;
+          text-transform: capitalize;
+          color: white;
+          text-decoration: none;
+          font-weight: 300;
+          display: block;
+          transition: all 0.3s ease;
+          }
+          
+          .footer-col ul li a:hover {
+          color: white;
+          padding-left: 8px;
+          }
+          
+          
+          
+          /* Section Copyright */
+          .copyright {
+          text-align: center;
+          color: rgb(0, 0, 0);
+          margin-top: 20px; 
+          padding: 10px 0; 
+          }
+          
+          .copyright h5 {
+          font-size: 14px;
+          line-height: 1.5;
+          margin: 0;
+          }
+          
+          
+          /* Responsive */
+          @media (max-width: 767px) {
+          .footer-col {
+              width: 50%;
+              margin-bottom: 30px;
+          }
+          }
+          
+          @media (max-width: 574px) {
+          .footer-col {
+              width: 100%;
+          }
+  }
 
