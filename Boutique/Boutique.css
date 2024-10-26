@@ -111,18 +111,20 @@ html::-webkit-scrollbar{
 }
 
 /*Filtre*/
-.filtre{
+.filtre {
+    position: sticky;
+    top: 50px;
+    bottom: 100px; 
     text-align: start;
     display: block;
     align-items: center;
     justify-content: flex-start;
     margin-left: 10px;
-    position: fixed;
-    margin-top: 50px;
     border: solid white 2px;
     border-radius: 20px;
     padding: 15px;
 }
+
 
 .filtre a{
     border: solid white 1px;
@@ -162,6 +164,20 @@ html::-webkit-scrollbar{
 rendre responsive bientot fait 
 (Faire section de meilleur vente / promo)
 */
+
+.chat{
+    position:absolute;
+    right: 0;
+    top:250px;
+    height: 600px;
+    width: 300px;
+    z-index: 0;
+    }
+    
+.chat img {
+    width: 100%;
+    height: auto;
+}
  .imageHerbe > div {
     position: relative;
     display: inline-block;
@@ -182,6 +198,7 @@ rendre responsive bientot fait
     animation: fadeIn 0.3s ease-in forwards;
     animation-delay: 1s; 
     pointer-events: none;
+    display: none;
 }
 
 @keyframes fadeIn {
@@ -203,7 +220,8 @@ rendre responsive bientot fait
 .imgAvocat:hover .description,
 .imgGermandree:hover .description,
 .imgMatatabi:hover .description {
-    animation: fadeIn 0.3s ease-in forwards 1.0s;
+    animation: fadeIn 0.3s ease-in forwards 0.3s;
+    display: block;
 } 
 
  
@@ -303,10 +321,11 @@ body{
 /* FOOTER DE PAGE */
 
 footer{
-  background-color: rgb(5, 88, 9);
+  background-color: rgba(165,184,159,255);
   padding: 70px 0;
     width:100vw; 
         margin-left: calc(50% - 50vw); 
+        color :black
         }
         .footer p{
             text-align: center;
@@ -320,7 +339,7 @@ footer{
         
         .footer-col h4 {
         font-size: 18px;
-        color: #ffffff;
+        color: black;
         text-transform: capitalize;
         margin-bottom: 35px;
         font-weight: 500;
@@ -348,7 +367,7 @@ footer{
         .footer-col ul li a {
         font-size: 16px;
         text-transform: capitalize;
-        color: #ffffff;
+        color: black;
         text-decoration: none;
         font-weight: 300;
         display: block;
@@ -356,7 +375,7 @@ footer{
         }
         
         .footer-col ul li a:hover {
-        color: #ffffff;
+        color: black;
         padding-left: 8px;
         }
         
