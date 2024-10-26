@@ -10,23 +10,38 @@
 
 <body>
     <div class="imgBackground">
-    <header>
-        <nav class="navBarre">
-            <span class="menu-toggle">☰</span>
-            <div class="navGauche">
-                <a href="index.html">Accueil</a>
-                <a href="./Boutique/Boutique.html">Boutique</a>
-                <a href="./Panier/Panier.html">Panier</a>
-                <div class="barreRecherche">
-                    <input type="text" placeholder="Rechercher..." />
-                    <button type="submit">🔍</button>
+        <header>
+            <nav class="navBarre">
+                <div class="navGauche">
+                    <a href="index.html">Accueil</a>
+                    <a href="./Boutique/Boutique.html">Boutique</a>
+                    <a href="./Panier/Panier.html">Panier</a>
+                    <div class="barreRecherche">
+                        <input type="text" placeholder="Rechercher..." />
+                        <button type="submit">🔍</button>
+                    </div>
                 </div>
-            </div>
-            <div class="navDroite">
-                <a class="rightNav" href="./About/About.html">À propos</a>
-            </div>
-        </nav>
-    </header>
+                
+                <div class="navDroite">
+                    <a class="rightNav" href="./About/About.html">À propos</a>
+                </div>
+                
+                <label for="menuToggle" class="menuIcon">&#9776;</label>
+                <input type="checkbox" id="menuToggle">
+                
+                <div class="menuBurger">
+                    <button class="closeBtn" onclick="document.getElementById('menuToggle').checked = false;">✖</button>
+                    <img src="./images/android-chrome-512x512.png" alt="">
+                    <div class="titreBurger">Herbe Achat</div>
+                    <a href="index.html">Accueil</a>
+                    <a href="./Boutique/Boutique.html">Boutique</a>
+                    <a href="./Panier/Panier.html">Panier</a>
+                    <a href="./About/About.html">À propos</a>
+                </div>
+            </nav>
+        </header>
+        
+        
 
     
     <div class="titreAccueil">
@@ -113,32 +128,26 @@
     <footer>
         Page réalisée par Natan
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const questions = document.querySelectorAll('.question');
             
-            questions.forEach(question => {
-                question.addEventListener('click', function() {
-                    const reponse = this.nextElementSibling;
-                    if (reponse.style.display === 'block') {
-                        reponse.style.display = 'none';
-                    } else {
-                        reponse.style.display = 'block';
-                    }
-                });
-            });
-        });
-    </script>
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navBarre = document.querySelector('.navBarre');
-    
-        menuToggle.addEventListener('click', () => {
-            navBarre.classList.toggle('active');
-        });
-    </script>
     
 </body>
+<script>
+    document.querySelectorAll('.carte-faq .question').forEach(item => {
+        item.addEventListener('click', event => {
+            const reponse = item.nextElementSibling;
+            reponse.style.display = reponse.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+<!-- <script>
+    document.getElementById('menuToggle').addEventListener('change', function() {
+        const menuBurger = document.querySelector('.menuBurger');
+        if (this.checked) {
+            menuBurger.style.display = 'block';
+        } else {
+            menuBurger.style.display = 'none';
+        }
+    });
+</script> -->
 
 </html>

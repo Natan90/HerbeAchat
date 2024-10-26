@@ -18,11 +18,25 @@
                     <button type="submit">🔍</button>
                 </div>
             </div>
+            
             <div class="navDroite">
                 <a class="rightNav" href="../About/About.html">À propos</a>
             </div>
+            
+            <label for="menuToggle" class="menuIcon">&#9776;</label>
+            <input type="checkbox" id="menuToggle">
+            
+            <div class="menuBurger">
+                <button class="closeBtn" onclick="document.getElementById('menuToggle').checked = false;">✖</button>
+                <img src="../images/android-chrome-512x512.png" alt="">
+                <div class="titreBurger">Herbe Achat</div>
+                <a href="../index.html">Accueil</a>
+                <a href="../Boutique/Boutique.html">Boutique</a>
+                <a href="../Panier/Panier.html">Panier</a>
+                <a href="../About/About.html">À propos</a>
+            </div>
         </nav>
-    </header> 
+    </header>
     <div class="conteneur">  
         <div class="filtre">
             <a href="">Filtrer</a>
