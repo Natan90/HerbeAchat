@@ -8,3 +8,5 @@ Page d'accueil : BOUCHE Natan<br>
 Page boutique : BIGEARD Noa<br> 
 Page panier : AIGUBELLE Arthur<br>
 Page à propos : LEVARD Emmanuel<br>
+<br>
+Barre de navigation & Menu burger : BOUCHE Natan<br>
