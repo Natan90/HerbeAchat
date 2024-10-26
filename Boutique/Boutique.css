@@ -379,11 +379,11 @@ body{
 /* FOOTER DE PAGE */
 
 footer{
-  background-color: rgba(165,184,159,255);
+  background-color: rgb(37, 37, 37);
   padding: 70px 0;
     width:100vw; 
         margin-left: calc(50% - 50vw); 
-        color :black
+        color :white
         }
         .footer p{
             text-align: center;
@@ -397,7 +397,7 @@ footer{
         
         .footer-col h4 {
         font-size: 18px;
-        color: black;
+        color: white;
         text-transform: capitalize;
         margin-bottom: 35px;
         font-weight: 500;
@@ -411,7 +411,7 @@ footer{
         position: absolute;
         left: 0;
         bottom: -10px;
-        background-color: #000000;
+        background-color: white;
         height: 2px;
         box-sizing: border-box;
         width: 200px;
@@ -425,7 +425,7 @@ footer{
         .footer-col ul li a {
         font-size: 16px;
         text-transform: capitalize;
-        color: black;
+        color: white;
         text-decoration: none;
         font-weight: 300;
         display: block;
@@ -433,7 +433,7 @@ footer{
         }
         
         .footer-col ul li a:hover {
-        color: black;
+        color: white;
         padding-left: 8px;
         }
         
