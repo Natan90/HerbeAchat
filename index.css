@@ -217,7 +217,7 @@ body{
     margin-top: 15%;
 
     color: #ffffff;
-    font-size: 20px;
+    font-size: 3vh;
 
 
 }
@@ -248,7 +248,7 @@ body{
     background-color: white;
     padding: 30px;
     border-radius: 20px;
-    margin: 1000px auto auto;
+    margin: 110vh auto auto;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
@@ -279,9 +279,24 @@ body{
     font-weight: bold;
     font-size: 16px;
 }
+
 .fleche-simple{
     float: right;
+
     width: 30px;
+}
+@media (max-width: 768px) {
+    .wikiHerbeAchat{
+        width: 80%;
+    }
+    .wikiHerbeAchat h1{
+        font-size: 3vh;
+        font-weight: bold;
+    }
+    .carte-faq{
+        width: 80%;
+        margin: 30px auto auto;
+    }
 }
 
 
@@ -289,8 +304,8 @@ body{
 
 
 footer {
-    bottom: 0;
-    margin-top: 1000px;
+    margin-top: 30px;
+
     background-color: #333;
     color: white;
     text-align: center; 
