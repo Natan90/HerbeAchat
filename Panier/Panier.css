@@ -1,205 +1,417 @@
-html {
-    font-family: Arial, Helvetica, sans-serif;
 
+  img {
+    width: 20%;
+    height: auto; 
+  } 
+  
+  hr {
+  margin: 0;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 55%;
 }
-body{
+@media (max-width: 480px) {
+  img {
+    width: 70%;
+    height: auto;
+  }
+
+  hr {
     margin: 0;
-    padding: 0;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    width: 100%;
+  }
+  .descFood {
+    text-align: left;
+      font-size: x-large;
+  }
+  
 }
 
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8f5e9;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.food {
+    float: left;
+    margin-left: 4%; 
+    padding-right: 4%;
+    padding-bottom: 4%;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+}
+
+.container2 {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+    margin-top: 3%;
+}
+
+
+.resume {
+  margin-right: 5%;
+  align-items: right;
+  justify-content: right;
+
+}
+
+.Total1{
+  text-align: right;
+  margin-top: 5%;
+}
+.Total2{
+  text-align: right;
+}
+p {
+  font-family:Arial, Helvetica, sans-serif;
+}  
+
+.descFood {
+  text-align: left;
+    font-size: xx-large;
+}
+
+.promo {
+  float: right;
+  margin-right: 1%;
+  width: 25%;
+  height: 15%;
+  border: 3px solid #555;
+  padding: 1.7%;
+  
+}
+
+hr.prix {
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 35%;
+  border: 1px solid;
+}
+
+.totalPrix {
+  text-align: right;
+  font-weight: bold;
+}
+
+
+
+.commande {
+  text-align: right;
+  margin: 5%;
+  margin-bottom: 1%;
+  font-weight: bold;
+  
+}
+
+@media (max-width: 480px) {
+  .resume {
+  margin-right: 5%;
+  align-items: right;
+  justify-content: center;
+
+}
+
+.Total1{
+  text-align: center;
+  margin-top: 5%;
+}
+.Total2{
+  text-align: center;
+}
+  .promo {
+    margin-right: 23%;
+    width: 48%;
+    height: 15%;
+    border: 3px solid #555;
+    padding: 1.7%;
+    
+  }
+  
+  hr.prix {
+    float:right;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 30%;
+    width: 40%;
+    border: 1px solid;
+  }
+  
+  .totalPrix {
+    text-align: center;
+    font-weight: bold;
+
+  }
+  
+  .commande {
+    text-align: center;
+    margin: 5%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    
+  }
+
+  
+}
+
+.suppr {
+  border: 0;
+  line-height: 2.5;
+  margin-top: 4%;
+  font-size: 45%;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #37a03c;
+  box-shadow:
+    inset 2px 2px 3px #f5f5f5,
+    inset -2px -2px 3px #000000;
+}
+
+.suppr:hover {
+  background-color: #2e7d32;
+}
+
+.suppr:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Ajoutez cette règle CSS pour personnaliser le bouton d'application du code promo */
+#applyPromoButton {
+  background-color: #37a03c;
+  border: 0;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #000000;
+  padding: 1.5% 1.5%; /* Ajustez les valeurs de marge ici */
+  transition: all 0.3s; /* Ajoutez une transition pour une animation en douceur */
+  float: right;
+}
+
+#applyPromoButton:hover {
+  background-color: #2e7d32;
+  cursor: pointer; /* Changez le curseur au survol pour indiquer l'interaction */
+}
+
+#applyPromoButton:active {
+  transform: scale(0.05); /* Réduisez légèrement la taille du bouton au clic */
+}
+
+.informations-commande {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.toggle-title {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-title span {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.texte-retour,
+.texte-livraison {
+  display: none;
+  margin-top: 10px;
+}
+
+.active {
+  display: block; /* ou display: inline-block; en fonction de vos besoins */
+}
+
+.politique li {
+  font-weight: bold;
+}
 
 /* BARRE DE NAVIGATION */
 
-header {
-    background-color:  rgb(37, 37, 37);
-    padding: 10px 20px;
-    z-index: 10;
-}
-
 .navBarre {
-    position: relative;
-    background-color: rgb(37, 37, 37);
-    padding: 10px 0;
-    height: 50px;
-    z-index: 10;
+  position: relative;
+  background-color:  rgb(37, 37, 37);
+  padding: 30px;
+  height: 50px;
+  z-index: 10;
 }
 
 .navGauche, .navDroite {
-    position: absolute;
-    top: 0;
-    display: flex;
-    align-items: center;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  display: flex;     
+  flex-direction: row;     
+  flex-wrap: wrap;     
 }
 
 .navGauche {
-    position: absolute;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px; 
 }
 
-.navDroite a{
-    text-align: center;
+.navDroite a {
+  text-align: center;
 }
 
 .navDroite {
-    right: 0;
-    padding-right: 20px;
-    text-align: center;
+  right: 0;
+  padding-right: 20px;
+  text-align: center;
 }
 
 .navBarre a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-right: 30px;
-    padding: 5px 10px;
-    font-size: 20px;
-    position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 30px;
+  padding: 5px 10px;
+  font-size: 3vh;
+  position: relative;
 }
 
 .navBarre a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #ffffff;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
-
-.navBarre a:hover {
-    transition: transform 0.3s ease;
-}
-
-.navBarre a:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-}
-
-/* BARRE DE RECHERCHE */
-
-.barreRecherche {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .barreRecherche input {
-    width: 200px;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 20px;
-    outline: none;
+  width: 200px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
 }
 
 .barreRecherche button {
-    padding: 5px 10px;
-    margin-left: 5px;
-    border: none;
-    background-color: black;
-    color: #010101;
-    border-radius: 40%;
-    cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border: none;
+  background-color: black;
+  color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .barreRecherche button:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
-/* Footer */
-footer{
-    background-color: rgba(165,184,159,255);
-    padding: 70px 0;
-      width:100vw; 
-          margin-left: calc(50% - 50vw); 
-          color :black
-          }
-          .footer p{
-              text-align: center;
-          }
-          .footer-col {
-          width: 25%;
-          padding: 15px;
-          display: inline-block; 
-          vertical-align: top; 
-          }
-          
-          .footer-col h4 {
-          font-size: 18px;
-          color: black;
-          text-transform: capitalize;
-          margin-bottom: 35px;
-          font-weight: 500;
-          position: relative;
-          }
-          .footer-col ul{
-              padding-left: 35px;
-          }
-          .footer-col h4::before {
-          content: '';
-          position: absolute;
-          left: 0;
-          bottom: -10px;
-          background-color: #000000;
-          height: 2px;
-          box-sizing: border-box;
-          width: 200px;
-          }
-          
-          .footer-col ul li:not(:last-child) {
-          margin-bottom: 10px;
-          }
-          
-          
-          .footer-col ul li a {
-          font-size: 16px;
-          text-transform: capitalize;
-          color: black;
-          text-decoration: none;
-          font-weight: 300;
-          display: block;
-          transition: all 0.3s ease;
-          }
-          
-          .footer-col ul li a:hover {
-          color: black;
-          padding-left: 8px;
-          }
-          
-          
-          
-          /* Section Copyright */
-          .copyright {
-          text-align: center;
-          color: rgb(0, 0, 0);
-          margin-top: 20px; 
-          padding: 10px 0; 
-          }
-          
-          .copyright h5 {
-          font-size: 14px;
-          line-height: 1.5;
-          margin: 0;
-          }
-          
-          
-          /* Responsive */
-          @media (max-width: 767px) {
-          .footer-col {
-              width: 50%;
-              margin-bottom: 30px;
-          }
-          }
-          
-          @media (max-width: 574px) {
-          .footer-col {
-              width: 100%;
-          }
+.navBarre a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* MENU BURGER NAVIGATION */
+
+#menuToggle {
+  display: none;
+}
+.menuIcon {
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: #fff;
+  padding: 10px;
+  z-index: 100;
+}
+
+.menuBurger {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: -45%;
+  height: 100%;
+  width: 45%;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: left 0.3s ease;
+  z-index: 100;
+}
+.menuBurger img {
+  width: 80px;
+  margin: 0 auto;
+  display: block;
+}
+.titreBurger{
+  width: 100%;
+  margin-top: 20px;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.693);
+  padding-bottom: 10px;
+}
+
+.menuBurger a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  text-align: left;
+  padding: 10px 20px;
+  width: 50%;
+  border-bottom: solid rgba(255, 255, 255, 0.693) 1px;
+  margin-top: 25px;
+}
+.menuBurger .closeBtn {
+  font-size: 24px;
+  color: #ffffff;
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+/* BARRE DE NAV RESPONSIVE */
+@media (max-width: 768px) {
+  .navGauche, .navDroite {
+      display: none;
   }
+  .menuIcon {
+      display: block;
+  }
+  
+  #menuToggle:checked + .menuBurger {
+      left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .menuIcon {
+      display: none;
+  }
+  .menuBurger {
+      display: none;
+  }
+}
