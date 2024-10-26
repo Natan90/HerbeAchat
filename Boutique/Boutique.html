@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="Boutique.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HerbeAChat</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <title>Boutique</title>
 </head>
 <body>
     <header>
@@ -36,84 +37,112 @@
                 <a href="../About/About.html">À propos</a>
             </div>
         </nav>
-    </header>
-    <div class="conteneur">  
+    </header> 
+    <div class="container-total">
+    <div class="conteneur1">  
         <div class="filtre">
-            <a href="">Filtrer</a>
-            <p>Prix : </p>
+            <a href="#">Filtrer</a>
+            <div class="prix"><p>Prix :</p>
                 <select name="deroulant1" id="deroulantPrix">
                     <option value="rien">Quel prix</option>
                     <option value="prix1">moins de 5 €</option>
                     <option value="prix2">5-10 €</option>
                     <option value="prix3">plus de 10 €</option>
                 </select>
-                <p>Format : </p>
+                </div>
+                <div class="format"><p>Format :</p>
                 <select name="deroulant2" id="deroulantFormat">
                     <option value="rien">Type de format</option>
                     <option value="plante">Plante verte</option>
                     <option value="spray">En spray</option>
-                    <option value="pourdre">En poudre</option>
+                    <option value="poudre">En poudre</option>
+                    <option value="jouet">Jouet</option>
                 </select>
-                <p>Effet rechercher :</p>
+                </div>
+               <div class="effet"> <p>Effet recherché :</p>
                 <select name="deroulant3" id="deroulantEffet">
                     <option value="rien">Type d'effet</option>
                     <option value="Euphorisant">Euphorisant</option>
                     <option value="calmant">Calmant</option>
                     <option value="digestion">Aide à la digestion</option>
                 </select>
+            </div>
         </div>
-         <div class="imageHerbe">
+    </div>
+        <div class="conteneur2">
+        
+              <div class="imageHerbe">
             <div class="imgCyperus">
                 <span>Cyperus 3.99 €</span>
-            <a href="../Boutique/Cyperus.html"><img src="../images/Cyperus.jpg" alt="Herbe1"></a><br>
+                <a href="../Boutique/Cyperus.html"><img src="../images/Cyperus.jpg" alt="Herbe1"></a><br>
+                <div class="description">Cyperus: herbe à chat pour la digestion</div>
+            </div>
             
-            </div> 
             <div class="imgPhalangere">
                 <span>Phalangère 5.99 €</span>
-                <a href="../Boutique/Phalangere.html"><img src="../images/Phalangere.jpg" alt="Herbe2"></a><br>
-                
+                <a href="../Boutique/Phalangere.html"><img src="../images/Phalangere-removebg-preview (1).png" alt="Herbe2"></a><br>
+                <div class="description">Phalangere: Herbe à chat douce pour la digestion.</div>
             </div>
             <div class="poudre">
                 <span>Poudre de Matatabi 9 €</span>
-                <a href="../Boutique/Poudre.html"><img src="../images/PoudreH.webp" alt="pourdre"></a><br>
+                <a href="../Boutique/Poudre.html"><img src="../images/poudre.png" alt="poudre"></a><br>
+                <div class="description">Poudre de Matatabi : Poudre pour stimuler et apaiser.</div>
             </div> 
             <div class="imgBambou">
                 <span>Bambou 6.99 €</span>
-                <a href="../Boutique/Bambou.html"><img src="../images/Bambou.jpg" alt="Herbe3"></a><br>
+                <a href="../Boutique/Bambou.html"><img src="../images/Bambou-removebg-preview.png" alt="Herbe3"></a><br>
+                <div class="description">Bambou : Tiges de bambou pour le bien-être félin.</div>
             </div> 
             <div class="imgBle">
                 <span>Plant de blé 4.99 €</span>
                 <a href="../Boutique/Ble.html"><img src="../images/Ble.jpg" alt="Herbe4"></a><br>
+                <div class="description">Plant de blé : Herbe à chat purgative et naturelle.</div>
             </div>
             <div class="spray">
                 <span>Spray de cataire 2.99 €</span>
-                <a href="../Boutique/spray.html"><img src="../images/SprayH.jpg" alt="spray"></a><br>
+                <a href="../Boutique/spray.html"><img src="../images/SprayH-removebg-preview.png" alt="spray"></a><br>
+                <div class="description">Spray de cataire : Spray apaisant pour attirer les chats.</div>
             </div>
             <div class="imgCataire">
                 <span>Plant de cataire  4.99 €</span>
-                <a href="../Boutique/Cataire.html"><img src="../images/Cataire.png" alt="Herbe5"></a><br>
+                <a href="../Boutique/Cataire.html"><img src="../images/Cataire-removebg-preview.png" alt="Herbe5"></a><br>
+                <div class="description">Plant de cataire : Plante verte pour le bonheur du chat.</div>
+            </div>
+            <div class="imgAvocat">
+                <span>Jouet avocat  8.50 €</span>
+                <a href="../Boutique/Avocat.html"><img src="../images/avocat.webp" alt="avocat"></a><br>
+                <div class="description">Jouet avocat : Jouet pour éveiller et amuser les chats.</div>
             </div>
             <div class="imgGermandree">
-                <span>Plant de germandrée 4.99 €</span>
-            <a href="../Boutique/Germandree.html"><img src="../images/Germandrée.jpg" alt="Herbe6"></a><br>
+                <span>Barquette d'herbe à chat 4.99 €</span>
+            <a href="../Boutique/Germandree.html"><img src="../images/barquette_herbe.jpg" alt="Herbe6"></a><br>
+            <div class="description">Barquette d'herbe à chat : Herbe fraîche pour purifier.</div>
             </div>
             <div class="imgMatatabi">
                 <span>Matatabi en pot 4.99 €</span>
                 <a href="../Boutique/Matatabi.html"><img src="../images/Matatabi.webp" alt="Herbe7"></a><br>
+                <div class="description">Matatabi en pot : Plante stimulante pour les chats.</div>
             </div>
-        
-              
-         </div>
-    </div>
-    <footer><br>
-        <h3>De plus à voir sur notre site</h3>
-        <div class="lien">
-            <a href="../index.html">• Accueil</a><br><br>
-            <a href="../Panier/Panier.html">• Votre panier</a><br><br> 
-            <a href="../About/About.html">• A propos</a><br><br>
         </div>
-        
-        
+        </div>  
+         </div>
+         
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Plus de notre site</h4>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="../Boutique/Boutique.html">Boutique</a></li>
+                        <li><a href="../Panier/Panier.html">Panier</a></li>
+                        <li><a href="../About/About.html">À propos</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+        </div>
         <p>page faite par Bigeard Noa</p>
     </footer>
 </body>

@@ -112,3 +112,94 @@ header {
 .barreRecherche button:hover {
     background-color: #555;
 }
+
+/* Footer */
+footer{
+    background-color: rgba(165,184,159,255);
+    padding: 70px 0;
+      width:100vw; 
+          margin-left: calc(50% - 50vw); 
+          color :black
+          }
+          .footer p{
+              text-align: center;
+          }
+          .footer-col {
+          width: 25%;
+          padding: 15px;
+          display: inline-block; 
+          vertical-align: top; 
+          }
+          
+          .footer-col h4 {
+          font-size: 18px;
+          color: black;
+          text-transform: capitalize;
+          margin-bottom: 35px;
+          font-weight: 500;
+          position: relative;
+          }
+          .footer-col ul{
+              padding-left: 35px;
+          }
+          .footer-col h4::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -10px;
+          background-color: #000000;
+          height: 2px;
+          box-sizing: border-box;
+          width: 200px;
+          }
+          
+          .footer-col ul li:not(:last-child) {
+          margin-bottom: 10px;
+          }
+          
+          
+          .footer-col ul li a {
+          font-size: 16px;
+          text-transform: capitalize;
+          color: black;
+          text-decoration: none;
+          font-weight: 300;
+          display: block;
+          transition: all 0.3s ease;
+          }
+          
+          .footer-col ul li a:hover {
+          color: black;
+          padding-left: 8px;
+          }
+          
+          
+          
+          /* Section Copyright */
+          .copyright {
+          text-align: center;
+          color: rgb(0, 0, 0);
+          margin-top: 20px; 
+          padding: 10px 0; 
+          }
+          
+          .copyright h5 {
+          font-size: 14px;
+          line-height: 1.5;
+          margin: 0;
+          }
+          
+          
+          /* Responsive */
+          @media (max-width: 767px) {
+          .footer-col {
+              width: 50%;
+              margin-bottom: 30px;
+          }
+          }
+          
+          @media (max-width: 574px) {
+          .footer-col {
+              width: 100%;
+          }
+  }
