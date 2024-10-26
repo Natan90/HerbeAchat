@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/Panier/Panier.css">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="Panier.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="Panier.js"></script>
+    <link rel="icon" href="../images/favicon.ico">
     <title>Panier</title>
 </head>
+
 <body>
+
     <header>
         <nav class="navBarre">
             <div class="navGauche">
@@ -19,27 +25,124 @@
                     <button type="submit">🔍</button>
                 </div>
             </div>
+
             <div class="navDroite">
                 <a class="rightNav" href="../About/About.html">À propos</a>
             </div>
-        </nav>
-    </header> 
-    <p>Page de votre panier</p>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Plus de notre site</h4>
-                    <ul>
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li><a href="../Boutique/Boutique.html">Boutique</a></li>
-                        <li><a href="../Panier/Panier.html">Panier</a></li>
-                        <li><a href="../About/About.html">À propos</a></li>
-                    </ul>
-                </div>
-              </div>
+
+            <label for="menuToggle" class="menuIcon">&#9776;</label>
+            <input type="checkbox" id="menuToggle">
+
+            <div class="menuBurger">
+                <button class="closeBtn" onclick="document.getElementById('menuToggle').checked = false;">✖</button>
+                <img src="../images/android-chrome-512x512.png" alt="">
+                <div class="titreBurger">Herbe Achat</div>
+                <a href="../index.html">Accueil</a>
+                <a href="../Boutique/Boutique.html">Boutique</a>
+                <a href="../Panier/Panier.html">Panier</a>
+                <a href="../About/About.html">À propos</a>
             </div>
+        </nav>
+    </header>
+
+    <h1 data-aos="fade-up">Votre Commande</h1>
+    <p data-aos="fade-up" data-aos-duration="1000">Vous avez oublié quelque chose ? Continuez vos <a href="produit.html"
+            data-aos="fade-up" data-aos-duration="1000"> Achats </a></p><br>
+    <br>
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <img class="food" src="../images/Bambou-removebg-preview.png" id="image1" alt="test" data-aos="fade-up">
+        <p class="descFood">Bambou <br>
+            Quantité : 3 <br>
+            6.99€ (x3) = 20.97€ <br>
+            <button class="suppr" type="button" data-aos="fade-up" data-aos-duration="1000">Supprimer</button>
+        </p>
+    </div>
+    <hr data-aos="fade-up" data-aos-duration="1000">
+
+    <div class="container2" data-aos="fade-up" data-aos-duration="1000">
+        <img class="food" src="../images/Cataire-removebg-preview.png" id="image2" alt="test" data-aos="fade-up">
+        <p class="descFood">Plant de Cataire <br>
+            Quantité : 2 <br>
+            4.99 (x2) = 9.88€ <br>
+            <button class="suppr" type="button" data-aos="fade-up" data-aos-duration="1000">Supprimer</button>
+        </p>
+    </div>
+    <div class="resume">
+        <p class="commande">Résumé de la commande</p>
+        <form>
+            <input class="promo" type="text" id="code" name="code" placeholder="Saisissez votre code promotionnel">
+            <button id="applyPromoButton" type="button">Appliquer</button>
+
+
+        </form><br>
+        <p class="Total1"> Poudre de Matatabi : 20.97€</p>
+        <p class="Total2">Plant de Cataire : 9.88€</p>
+        <p class="Total2">Total produits : 30.85€</p>
+        <p class="Total2">Livraison : Gratuite</p><br>
+        <hr class="prix"><br>
+        <p class="totalPrix">Total : 30.85€</p>
+        <p class="promoInfo"></p>
+
+    </div>
+
+    <div class="informations-commande">
+        <h3>Informations de commande</h3>
+        <hr>
+        <h5 id="retour" class="toggle-title">Politique de retour <span>+</span></h5>
+        <div class="texte-retour">
+            Chez HerbeAchat, nous avons à cœur de satisfaire nos clients, en particulier les propriétaires de chats qui font confiance à notre service de livraison à domicile. Votre satisfaction est notre priorité, et nous sommes heureux de vous offrir la meilleure expérience possible. Dans le cas peu probable où vous ne seriez pas satisfait de votre commande, veuillez lire notre politique de retour ci-dessous :
+            
+            <ul class="politique">
+                <li>1.1 Satisfaction Garantie</li>
+                <p>Nous nous engageons à vous offrir de l'herbe à chat de qualité à un prix abordable. Si, pour une raison quelconque, vous n'êtes pas satisfait de votre commande, veuillez nous contacter. Nous ferons de notre mieux pour résoudre votre problème rapidement.</p>
+                
+                <li>1.2 Commande Incorrecte ou Incomplète</li>
+                <p>Si vous recevez une commande incorrecte ou des articles manquants, veuillez nous en informer dans les plus brefs délais. Nous vous enverrons la commande correcte ou les articles manquants sans frais supplémentaires.</p>
+                
+                <li>1.3 Produits Endommagés ou de Mauvaise Qualité</li>
+                <p>Votre satisfaction est importante pour nous. Si vous recevez des produits endommagés ou de mauvaise qualité, veuillez nous contacter dans les 24 heures suivant la réception de votre commande. Nous vous offrirons un remplacement ou un remboursement intégral.</p>
+                
+                <li>1.4 Délais de Réclamation</li>
+                <p>Toute réclamation concernant votre commande doit être signalée dans les 24 heures suivant la livraison. Cela nous permettra de traiter votre demande de manière efficace.</p>
+                
+                <li>1.5 Processus de Retour</li>
+                <p>Si vous avez besoin de retourner un produit ou de signaler un problème, veuillez nous contacter par e-mail à emailexemple@gmail.com ou par téléphone au 0123456789. Notre équipe du service client vous guidera tout au long du processus de retour.</p>
+                
+                <li>1.6 Remboursements et Crédits</li>
+                <p>En cas de retour, vous avez le choix entre un remboursement complet ou un crédit équivalent à la valeur de votre commande pour une utilisation ultérieure. Le remboursement sera traité dans un délai raisonnable.</p>
+                
+                <li>1.7 Produits Périssables</li>
+                <p>Nous comprenons que nos produits sont périssables, et nous vous encourageons à signaler rapidement tout problème de qualité. Cela nous aidera à résoudre la situation de manière satisfaisante.</p>
+                
+                <li>1.8 Modifications de la Politique de Retour</li>
+                <p>HerbeAchat se réserve le droit de modifier sa politique de retour à tout moment. Toutes les modifications seront communiquées sur notre site Web.</p>
+                
+                <li>1.9 Service Client</li>
+                <p>Notre équipe du service client est à votre disposition pour répondre à toutes vos questions, préoccupations ou réclamations. Vous pouvez nous contacter à emailexemple@gmail.com ou par téléphone au 0123456789.</p>
+            </ul>
+            <hr>
         </div>
-        <p>page faite par Aigubelle Arthur</p>
+        <h5 id="livraison" class="toggle-title">Options de livraison <span>+</span></h5>
+        <div class="texte-livraison">
+            <p>
+                2. Chez HerbeAchat, nous proposons différentes options de livraison pour répondre à vos besoins :
+            </p>
+            <ul class="politique">
+                <li>2.1 Livraison Standard</li>
+                <p>Notre livraison standard est gratuite pour toutes les commandes. Elle est généralement effectuée dans un délai de 30 minutes.</p>
+                
+                <li>2.2 Ramassage en Magasin</li>
+                <p>Si vous préférez, vous pouvez également choisir l'option de ramassage en magasin. Vous serez informé dès que votre commande sera prête à être récupérée dans nos points de vente.</p>
+            </ul>
+        </div>
+        
+
+
+
+
+    
+
+    <script> AOS.init();</script>
 </body>
+
 </html>
