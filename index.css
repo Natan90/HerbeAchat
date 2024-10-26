@@ -140,9 +140,9 @@ body{
     align-items: flex-start;
     position: fixed;
     top: 0;
-    left: -45%;
+    left: -55%;
     height: 100%;
-    width: 45%;
+    width: 55%;
     background-color: rgba(0, 0, 0, 0.9);
     transition: left 0.3s ease;
     z-index: 100;
@@ -214,7 +214,7 @@ body{
 
 .titreAccueil{
     text-align: center;
-    margin-top: 15%;
+    margin-top: 20vh;
 
     color: #ffffff;
     font-size: 3vh;
