@@ -165,19 +165,7 @@ rendre responsive bientot fait
 (Faire section de meilleur vente / promo)
 */
 
-.chat{
-    position:absolute;
-    right: 0;
-    top:250px;
-    height: 600px;
-    width: 300px;
-    z-index: 0;
-    }
-    
-.chat img {
-    width: 100%;
-    height: auto;
-}
+
  .imageHerbe > div {
     position: relative;
     display: inline-block;
