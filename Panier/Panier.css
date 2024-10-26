@@ -3,7 +3,7 @@
     width: 20%;
     height: auto; 
   } 
-  
+
   hr {
   margin: 0;
   margin-top: 10%;
@@ -36,7 +36,8 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-}
+  overflow-x: hidden; 
+  }
 
 
 .food {
@@ -413,5 +414,100 @@ hr.prix {
   }
   .menuBurger {
       display: none;
+  }
+}
+
+
+/* FOOTER DE PAGE */
+
+footer {
+  background-color: rgb(37, 37, 37);
+  padding: 70px 0;
+  width: 100%; /* S'assurer que le footer prend toute la largeur */
+  color: white;
+  text-align: left; /* Aligner tout le contenu à gauche */
+  margin: 0; /* Supprimer les marges */
+  position: relative; /* Position relative pour éviter des comportements inattendus */
+}
+
+.footer p {
+  text-align: center; /* Garder le texte du paragraphe centré */
+}
+
+.footer-col {
+  width: 25%;
+  padding: 15px;
+  display: inline-block; 
+  vertical-align: top; 
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col ul {
+  padding-left: 35px;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: white;
+  height: 2px;
+  box-sizing: border-box;
+  width: 200px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: white;
+  padding-left: 8px;
+}
+
+/* Section Copyright */
+.copyright {
+  text-align: center; /* Garder le copyright centré */
+  color: rgb(0, 0, 0);
+  margin-top: 20px; 
+  padding: 10px 0; 
+}
+
+.copyright h5 {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .footer-col {
+      width: 50%;
+      margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+      width: 100%;
   }
 }
